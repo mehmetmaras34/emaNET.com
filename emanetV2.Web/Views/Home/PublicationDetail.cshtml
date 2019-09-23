@@ -1,0 +1,27 @@
+﻿@model emanetV2.Web.Models.DetailsViewModel
+
+@{
+    ViewBag.Title = "İlan Detayları";
+}
+
+<div class="row">
+
+  
+
+        <div class="col-md-3 mx-2 my-2 style="border:solid 1px">
+            <div class="card d-block" style="height:250px;">
+                <img src="~/Uploads/@Model.Photo" class="card-img-top" alt="@Model.Title">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Title</h5>
+                    <p class="card-text">@Model.Description</p>
+                    <p class="card-text">@Model.Note</p>
+                    <p class="card-text">@Model.AnimalSize</p>
+                    <p class="card-text">@Model.AnimalType</p>
+                    <a href="@Url.Action("PublicationDetail","Home","Web")" class="btn btn-primary" style="position:absolute;bottom:10px;right:15px;">Ayrıntılar</a>
+                </div>
+            </div>
+        </div>
+
+    
+</div>
+
